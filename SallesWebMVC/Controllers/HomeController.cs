@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SallesWebMVC.Models;
+using SallesWebMVC.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -22,7 +23,14 @@ namespace SallesWebMVC.Controllers
         {
             return View();
         }
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Aplicação criada com pro curso de c#";
+            ViewData["email"] = "Lucastaveirag@gmail.com";
+            ViewData["Ass"] = "Lucas Taveira Gonçalves";
 
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
