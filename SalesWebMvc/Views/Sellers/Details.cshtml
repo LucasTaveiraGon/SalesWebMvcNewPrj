@@ -15,8 +15,8 @@
              Seller Data
     </h3>
   </div>
-  <div class="panel-body">
-         <h7> <strong>
+  <div class="panel-body text-white">
+         <h6> <strong>
             @Html.DisplayNameFor(model => model.Name):
             @Html.DisplayFor(model => model.Name) <br>
         
@@ -28,10 +28,10 @@
        
             @Html.DisplayNameFor(model => model.BaseSalary):
             @Html.DisplayFor(model => model.BaseSalary) <br>
-        </strong> </h7>
+        </strong> </h6>
   </div>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-info">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-info">Edit</a> | | 
     <a asp-action="Index" class="btn btn-default">Back to List</a>
 </div>
