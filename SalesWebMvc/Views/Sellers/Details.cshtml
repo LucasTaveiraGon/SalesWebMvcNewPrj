@@ -4,43 +4,32 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>Details</h2>
+<h2></h2>
 
 <div>
-    <h4>Seller</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BirthDate)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BirthDate)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BaseSalary)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BaseSalary)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.DepartmentId)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.DepartmentId)
-        </dd>
-    </dl>
+    <h4>Seller Details</h4>
+  </div>
+    <div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+             Seller Data
+    </h3>
+  </div>
+  <div class="panel-body">
+         <h7> <strong>
+            @Html.DisplayNameFor(model => model.Name):
+            @Html.DisplayFor(model => model.Name) <br>
+        
+            @Html.DisplayNameFor(model => model.Email):
+            @Html.DisplayFor(model => model.Email) <br />
+        
+            @Html.DisplayNameFor(model => model.BirthDate):
+            @Html.DisplayFor(model => model.BirthDate) <br>
+       
+            @Html.DisplayNameFor(model => model.BaseSalary):
+            @Html.DisplayFor(model => model.BaseSalary) <br>
+        </strong> </h7>
+  </div>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-info">Edit</a> |
